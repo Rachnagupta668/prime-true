@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt();
+	    boolean isprime = true;
+	    for(int i = 2; i<n; i++){
+	    if(n%i==0){  //n%i ex 13%4 !=0; it means this is prime number then i will increase i value and chek till i value 1 to 12 
+	                  //and 13 is prime number then after rum we get automaticaly true because it is intialise boolean is prime = true
+	        isprime = false; //if num is n = 4 then if 4%2 we get 0 value then that is not prime number and get false 
+	        break;
+	    }
+	   
+	    }
+	    if(n<2){  //this condistion use for less then 2 value like if n = 0 or -1 
+	        isprime = false;
+	       
+	    }
+		System.out.println("isprime" + isprime);
+	}
+}
